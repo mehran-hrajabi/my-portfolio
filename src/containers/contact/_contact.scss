@@ -1,0 +1,13 @@
+@import '../../assets/sass/base';
+
+.contact-form-box{
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 5px 30px 20px 30px;
+    width: 800px;
+    max-width: 90%;
+    background-color: $box;    
+    p{color: black;}
+}

@@ -1,0 +1,38 @@
+@import '../../assets/sass/base';
+
+.contact-button{
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 20px;
+	border-radius: 10px;
+	display: inline-block;
+	transition-duration: 0.5s;
+    font-weight: bold;
+    outline: none;
+    width: 120px;
+    height: 50px;
+}
+
+.submit{
+    @extend .contact-button;
+    background-color: $submit-bg;
+    color: $submit-primary;
+    border: 2px solid $submit-primary;
+    &:hover{
+        background-color: $submit-primary;
+        color: white;
+    }
+}
+.cancel{
+    @extend .contact-button;
+    background-color: $cancel-bg;
+    color:  black;
+    border: 2px solid black;
+    &:hover{background-color: $cancel-primary;}
+}
+
+@media only screen and (max-width: $mobileBp) {
+    .contact-button{
+        width: 50%;
+    }
+}

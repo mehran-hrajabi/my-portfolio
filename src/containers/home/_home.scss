@@ -1,0 +1,95 @@
+@import '../../assets/sass/base';
+
+.home{@include flex(row, initial, initial);}
+
+.home-nav{
+    width: 20%;
+    background-color: $primary;
+    >div{
+        @include flex(column, center, flex-start);
+        position: sticky;
+        top: 15%; 
+    }
+    img{
+        width: 70%;
+        border-radius: 200px;
+        border: 10px solid $secondary;
+        margin-bottom: 20px;
+    }
+    a{    
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+        margin-top: 10px;
+        color: $link;
+        &:hover{
+            color: $linkHover;
+        }
+        &:last-child{
+            margin-top: 0;
+        }
+        &.active{
+            color: $linkHover;
+        }
+    }
+    hr{
+        width: 50%;
+        background-color: black;
+    }
+}
+
+.home-container{
+    @include flex(column, flex-start, initial);
+    width: 80%;
+    background-color: white;
+    >div{
+        padding: 50px;
+    }
+}
+
+
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+	.home-nav{
+        a{font-size: 22px;}
+    }
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+	.home-nav{
+        >div{top: 5%;}
+        a{font-size: 20px;}
+    }
+}
+@media only screen and (max-width: $mobileBp) {
+    .home{
+        @include flex(column, initial, initial);   
+    }
+    .home-nav{
+        @include flex(column, center, center);
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        >div{
+            @include flex(row, center, center);
+            position: initial;
+        }
+        img{display: none;}
+        a{
+            margin: 0 20px 0 0;
+            font-size: 18px;
+        }
+        hr{display: none;}
+    }
+    .home-container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: $smallMobileBp) {
+    .home-nav{
+        height: 30px;
+        a{
+            font-size: 12px;
+            margin: 0 10px 0 0;
+        }
+    }
+}

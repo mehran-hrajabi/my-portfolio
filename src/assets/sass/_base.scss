@@ -1,0 +1,39 @@
+@import './var';
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+	font-family : 'Roboto', sans-serif;
+	font-style : normal ;
+	font-weight : normal ;
+	box-sizing : border-box ;
+}
+
+body{
+	background-color: white;
+	overflow-x: hidden;
+}
+
+button{cursor: pointer;}
+
+a{text-decoration: none;}
+
+p, li{
+	color: grey;
+	font-size: 22px;
+}
+
+h1, h2, h3{font-weight: bold;}
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+	p, li{font-size: 20px;}
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+	p, li{font-size: 18px;}
+}
+@media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
+	p, li{font-size: 16px;}
+}
+@media only screen and (max-width: $smallMobileBp) {
+	p,li{font-size: 14px;}
+}

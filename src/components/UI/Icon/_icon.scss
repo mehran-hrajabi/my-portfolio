@@ -1,0 +1,27 @@
+@import '../../../assets/sass/base';
+
+.socialMedia-links{
+    font-size: 50px;
+    color: gray;
+    margin-right: 20px;
+}
+
+.instagram:hover{color: $insta;}
+.twitter:hover{color: $twitter;}
+.telegram:hover{color: $telegram;}
+.linkedin:hover{color: $linkedin;}
+.github:hover{color: $github;}
+.gitlab:hover{color: $gitlab;}
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+    .socialMedia-links{font-size: 46px;}
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+    .socialMedia-links{font-size: 42px;}
+}
+@media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
+    .socialMedia-links{font-size: 38px;}
+}
+@media only screen and (max-width: $smallMobileBp) {
+    .socialMedia-links{font-size: 34px;}
+}

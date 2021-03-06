@@ -1,0 +1,59 @@
+@import '../../assets/sass/base';
+
+.homeAbout{@include flex(column, initial, initial);}
+.homeAbout-header{
+    h1{
+        font-size: 60px;
+        font-style: italic;
+    }
+    h1, a{font-weight: bold;}
+    a{
+        font-size: 16px;
+        color: $primary;
+        &:hover{color: $secondary;}
+    }
+}
+.homeAbout-body{
+    a{
+        font-size: 22px ;
+        color: $primary;
+        &:hover{color: $secondary;}
+    }
+}
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+    .homeAbout-header{
+        h1{font-size: 56px;}
+        a{font-size: 14px;}
+    }
+    .homeAbout-body{
+        a{font-size: 20px;}
+    }
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+    .homeAbout-header{
+        h1{font-size: 46px;}
+        a{font-size: 12px;}
+    }
+    .homeAbout-body{
+        a{font-size: 18px;}
+    }
+}
+@media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
+    .homeAbout-header{
+        h1{font-size: 40px;}
+        a{font-size: 10px;}
+    }
+    .homeAbout-body{
+        a{font-size: 16px;}
+    }
+}
+@media only screen and (max-width: $smallMobileBp) {
+    .homeAbout-header{
+        h1{font-size: 28px;}
+        a{font-size: 8px;}
+    }
+    .homeAbout-body{
+        a{font-size: 14px;}
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../assets/sass/base';
+
+.contact-form{
+    > h1{
+        font-size : 40px;
+        text-align : center ;
+        margin-bottom : 5px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    >p {
+        font-size: 16px;
+        margin: 0;
+        padding: 15px 0;
+        text-align: justify;
+    }
+    >div{
+        @include flex(row, center, space-between);
+    }
+}
+
+@media only screen and (max-width: $mobileBp) {
+    .contact-form{
+        >div{
+            @include flex(column-reverse, center, center);    
+        }
+    }
+}

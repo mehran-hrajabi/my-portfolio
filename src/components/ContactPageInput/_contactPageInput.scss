@@ -1,0 +1,42 @@
+@import '../../assets/sass/base';
+
+.contact-form-input{
+	@include flex(column, initial, initial);
+	margin-top: 20px;
+}
+
+.input-basic{
+    max-width : 90%;
+    border: 2px solid;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-position: 3px 3px; 
+	background-repeat: no-repeat;
+}
+
+input[type=text]{
+    @extend .input-basic;
+	width: 400px;
+	padding: 5px 35px;
+	height: 35px ;
+	font-size: 14px ;
+	background-image: url('../../assets/img/person_icon.png');
+}
+
+input[type=email]{
+    @extend .input-basic;
+	width : 400px;
+	padding: 5px 35px;
+	height: 35px;
+	font-size: 14px;
+	background-image: url('../../assets/img/email_icon.png');
+}
+
+textarea {
+    @extend .input-basic;
+	font-size: 14px;
+	padding: 7px 35px;
+	width: 550px;
+	height: 150px;
+	background-image: url('../../assets/img/comment_icon.png');
+}

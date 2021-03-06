@@ -1,0 +1,25 @@
+@import '../../assets/sass/base';
+
+.homeInterests{
+    @include flex(column, initial, initial);
+    margin-bottom: 210px;
+    a{
+        color: $primary;
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+    h1{font-size: 30px;}
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+    h1{font-size: 28px;}
+}
+@media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
+    h1{font-size: 26px;}
+}
+@media only screen and (max-width: $smallMobileBp) {
+    h1{font-size: 24px;}
+}
