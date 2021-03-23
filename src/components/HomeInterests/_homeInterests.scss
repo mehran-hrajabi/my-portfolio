@@ -2,12 +2,10 @@
 
 .homeInterests{
     @include flex(column, initial, initial);
-    margin-bottom: 210px;
+    margin-bottom: 100px;
     a{
         color: $primary;
-        &:hover{
-            color: $secondary;
-        }
+        &:hover{color: $secondary;}
     }
 }
 

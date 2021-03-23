@@ -1,44 +1,24 @@
 @import '../../assets/sass/base';
 
-.homeEducation{
-    @include flex(column, initial, initial);
-}
-.homeEducation-item{
-    margin-bottom: 50px;
-    >span{
-        font-size: 16px;
-        color: $primary;
-    }
-}
+.homeEducation{@include flex(column, initial, initial);}
 
 @media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
-    .homeEducation-item{
+    .homeEducation{
         h1{font-size: 30px;}
-        h2{font-size: 22px;}
-        >span{font-size: 14px;}
     }
 }
 @media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
-    .homeEducation-item{
+    .homeEducation{
         h1{font-size: 28px;}
-        h2{font-size: 20px;}
-        margin-bottom: 40px;
-        >span{font-size: 12px;}
     }
 }
 @media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
-    .homeEducation-item{
+    .homeEducation{
         h1{font-size: 26px;}
-        h2{font-size: 18px;}
-        margin-bottom: 30px;
-        >span{font-size: 10px;}
     }
 }
 @media only screen and (max-width: $smallMobileBp) {
-    .homeEducation-item{
+    .homeEducation{
         h1{font-size: 24px;}
-        h2{font-size: 16px;}
-        margin-bottom: 20px;
-        >span{font-size: 8px;}
     }
 }

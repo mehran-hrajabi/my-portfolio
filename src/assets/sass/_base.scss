@@ -16,9 +16,12 @@ body{
 
 button{cursor: pointer;}
 
-a{text-decoration: none;}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
 
-p, li{
+p, li, td{
 	color: grey;
 	font-size: 22px;
 }

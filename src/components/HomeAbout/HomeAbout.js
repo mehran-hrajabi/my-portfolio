@@ -18,8 +18,8 @@ const HomeAbout = () => {
                     <a href="http://ce.sharif.edu/" target="_blank"> Department of Computer Engineering</a>,
                     <a href="http://www.en.sharif.edu/" target="_blank"> Sharif University of Technology</a>, Tehran, Iran.
                 </p>      
-                <p>I'm also working as a front-end developer intern at 
-                    <a href="https://nahiratech.ir/" target="_blank"> NahiraTech</a>.
+                <p>I'm also working as a Front-End Developer at 
+                    <a href="https://ishaya.ir/" target="_blank"> Shaya Smart Solutions</a>.
                 </p>          
             </div>
             <div>

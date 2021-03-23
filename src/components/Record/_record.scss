@@ -1,0 +1,39 @@
+@import '../../assets/sass/base';
+
+.record{
+    h3{
+        font-size: 22px;
+        color: grey;
+        &:hover{color: $primary;}
+    }
+    >span{
+        font-size: 16px;
+        font-weight: bold;
+        color: $primary;
+    }  
+}
+
+@media only screen and (min-width: $tabletBp) and (max-width: $laptopBp){
+	.record{
+        h3{font-size: 20px;}
+        >span{font-size: 14px;}
+    }
+}
+@media only screen and (min-width: $mobileBp) and (max-width: $tabletBp) {
+    .record{
+        h3{font-size: 18px;}
+        >span{font-size: 12px;}
+    }
+}
+@media only screen and (min-width: $smallMobileBp) and (max-width: $mobileBp) {
+    .record{
+        h3{font-size: 16px;}
+        >span{font-size: 10px;}
+    }
+}
+@media only screen and (max-width: $smallMobileBp) {
+    .record{
+        h3{font-size: 14px;}
+        >span{font-size: 8px;}
+    }
+}
